@@ -1,4 +1,4 @@
-{
+const data = [{
     "estados": [
       {
         "sigla": "AC",
@@ -5734,3 +5734,4 @@
       }
     ]
   }
+]
