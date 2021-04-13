@@ -30,3 +30,14 @@ const data = [{
 }]
 
 // COMEÇA O EXERCÍCIO
+
+data.forEach(obj => { 
+    console.log(`${obj.name} \n ${obj.description} \n ${obj.art_url}  `)
+    for (let tipo of obj.types) {
+        console.log(`${tipo}`);
+    }
+    console.log('\n');
+})
+
+
+

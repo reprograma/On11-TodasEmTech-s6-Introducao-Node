@@ -24,4 +24,4 @@ const obj = [
     ]
 
     // COMEÇA O EXERCÍCIO
-  
+  obj.forEach(json => console.log(`${json.title} , ${json.description} \n`));
