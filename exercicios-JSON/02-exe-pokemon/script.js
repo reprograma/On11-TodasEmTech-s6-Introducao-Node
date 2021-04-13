@@ -31,6 +31,7 @@ const data = [{
 
 // COMEÇA O EXERCÍCIO
 
+<<<<<<< HEAD
 data.forEach(obj => { 
     console.log(`${obj.name} \n ${obj.description} \n ${obj.art_url}  `)
     for (let tipo of obj.types) {
@@ -41,3 +42,19 @@ data.forEach(obj => {
 
 
 
+=======
+for (let i=0; i < data.length; i++){
+    let pokemon = data[i];
+    console.log(pokemon.name)
+    console.log(pokemon.description)
+    console.log(pokemon.art_url)
+
+    let tipos = pokemon.types
+    for(let i=0; i< tipos.length; i++){
+        console.log(tipos[i])
+    }
+    
+    
+
+}
+>>>>>>> 3114a18cf17a31e86381f035d5b1a99181ebf84c
