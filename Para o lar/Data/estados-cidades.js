@@ -5735,3 +5735,16 @@ const data = [{
     ]
   }
 ]
+for (let i = 0; i < data.length; i++) {
+  let city = data[i];
+  console.log(city.estados)
+  console.log(city.sigla)
+  console.log(city.nome)
+  console.log(city.cidade)
+
+  let planet = city.types
+  for (let i = 0; i < planet.length; i++) {
+    console.log(tipos[i])
+  }
+} 
+    
