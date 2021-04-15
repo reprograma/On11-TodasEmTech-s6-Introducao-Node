@@ -25,6 +25,9 @@ No método PUT se modifica todas as informações a quem vai se referenciar. Por
 
 Já no método PATCH podemos ser mais específicos, de forma a selecionarmos que propriedade de `mulheresHistoricas` de `id: 98655`, como no exemplo citado acima, queremos que seja modificada. 
 #### 4) Defina o conceito de idempotência e como uma API pode ser idempotente
-
-
-#### 5) Cite alguns diferentes padrões de projetos de software
+Idempotência é uma propriedade referente à alteração feita. É também um conceito matemático, além de computacional. Como no caso de multiplicações, quando um valor é multiplicado por 0 e 1, sempre virá o mesmo resultado.<p>Quando se refere a API idempotente quer dizer que operações podem ser feitas diversas vezes e o resultado final não será alterado, o servidor não muda o seu estado, mesmo que faça a solicitação várias vezes seguidas, exemplo o GET para o endereço de um site.</p>
+#### 5) Cite alguns diferentes padrões de projetos de software:
+Padrões de software são literalmente padrões implementados para que se tenha um melhor aproveitamento no desenvolvimento de software, desde o código até a parte financeira. Irei citar os 3 pedidos na atividade, porém não consegui entender quais suas funções, ainda estão muito abstratas e não consegui visualizar de forma prática como são utilizadas:
+1. _FactoryMethod_ 
+2. _Singleton_
+3. _Template Method_
