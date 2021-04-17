@@ -96,7 +96,7 @@ for(movies of obj ){
     let idioma = movies.Language
         idioma = [];
         idioma.push(movies.Language);
-        console.log(idioma)
+        console.log(idioma);
     
     console.log("");
 }
