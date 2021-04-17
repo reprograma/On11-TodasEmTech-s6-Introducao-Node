@@ -1,3 +1,4 @@
+
 const obj = [
     {
         "Title":"10 Things I Hate About You",
@@ -75,3 +76,16 @@ const obj = [
         "Awards":"Nominated for 3 Oscars. Another 40 wins & 66 nominations."
     }
 ]
+
+//- No filmes.js apresente titulo, plot, generos e lingua. Genero e lingua devem ser apresentados em arrays no console.
+
+
+for (let i=0; i < obj.length; i++){
+    let film = obj[i];
+    console.log(film.Title)
+    console.log(film.Plot) 
+    console.log(Array(film.Language)) 
+    console.log(Array(film.Genre))
+
+}
+ 

@@ -149,3 +149,13 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+// No colors-rgb.js apresente o nome da cor e o codigo RGB como no exemplo: "gainsboro - rgb(220, 220, 220, 1)"
+
+
+for (let i=0; i < obj.length; i++){
+var colorName = obj[i];
+for (var property in colorName)
+  console.log(property + " - rgb (" + colorName[property] + ")");
+}
+
