@@ -31,17 +31,25 @@ const data = [{
 
 // COMEÇA O EXERCÍCIO
 
-for (let i=0; i < data.length; i++){
+/*let i = 0
+while (i < data.length) {
     let pokemon = data[i];
-    console.log(pokemon.name)
-    console.log(pokemon.description)
-    console.log(pokemon.art_url)
+    console.log(pokemon.name);
+    console.log(pokemon.description);
+    console.log(pokemon.art_url);
+      i++; (pecorrendo o objeto do array e mostrando a descrição dele o conteúdo!)
+  }  (Minha solução sem o types.) */ 
 
-    let tipos = pokemon.types
-    for(let i=0; i< tipos.length; i++){
-        console.log(tipos[i])
+  for (let i=0; i < data.length; i++){ // passa por toda lista do objeto array
+
+    let pokemon = data[i]; // i é cada item do bloco do objeto, será chamada pok cada unidade do objeto
+    console.log(pokemon.name); // puxa o nome do objeto array
+    console.log(pokemon.description); // puxa a descrição do objeto array
+    console.log(pokemon.art_url);
+
+    let tipos = pokemon.types;
+    for (let i=0; i < tipos.length; i++){
+        console.log(tipos[i]);
     }
-    
-    
 
-}
+  }
