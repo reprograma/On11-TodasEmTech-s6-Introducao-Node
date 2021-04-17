@@ -5735,3 +5735,24 @@ const data = [{
     ]
   }
 ]
+
+/*No estados-cidade.js apresente o nome do Estado, a sigla e todas as cidadades, sem arrays aparentes no console*/
+
+// for pro NomeEstado
+// for pra sigla SI 
+// for todas as cidades
+
+
+for (let i=0; i < data.length; i++){ //for dentro do data
+  let geral = data[i];
+ 
+  for(let j=0; j < geral.estados.length; j++){//for dentro de estados
+    console.log("Sigla: "+ geral.estados[j].sigla);
+    console.log("Estado:"+ geral.estados[j].nome);
+
+    let cidade = geral.estados[j].cidades; //caminho para o array cidades
+       for(let i=0; i< cidade.length; i++) //for para rodar cidades
+        console.log("Cidades:"+cidade[i]);
+        console.log("");
+  }
+    }

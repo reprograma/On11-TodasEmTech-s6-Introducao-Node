@@ -8,6 +8,7 @@ Abra o PullRequest Respondendo as seguintes questões:
 1) Qual a relação entre os métodos HTTP e o CRUD?
 
 2) Comente, com exemplos, a diferença entre o PUT e o PATCH.
+    O PUT deve ser usado quando se deseja substituir todos os atuais dados do recurso de destino pelos novos dados passados pela requisição.Atualização total com apenas uma requisição. O PATCH já funciona alterações parciais, com o PATCH você pode modificar apenas uma parte do recurso por requisição. 
 
 3) Assim como na aula, apresente os dados dos JSONs no console 
     - No colors-rgb.js apresente o nome da cor e o codigo RGB como no exemplo: "gainsboro - rgb(220, 220, 220, 1)"
