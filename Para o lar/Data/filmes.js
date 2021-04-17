@@ -77,8 +77,6 @@ const obj = [
 ]
 
 
-teste = obj[0].Genre.split(",")
-console.log(teste) 
 
 for (i=0; i<obj.length; i++){
     let filme = obj[i]
