@@ -1,3 +1,8 @@
+// data é um vetor com um objeto que possui uma unica propriedade chamada "estados"
+// a propriedade estados é um vetor de varios objetos
+// cada objeto de estados possui as seguintes propriedades: sigla, nome e cidades
+// a propriedade "cidades" é um vetor com varias cidades.
+
 const data = [{
     "estados": [
       {
@@ -5735,3 +5740,19 @@ const data = [{
     ]
   }
 ]
+ 
+// INTERPRETANDO OS DADOS:
+// data é um vetor  com um objeto que possui uma unica propriedade chamada "estados"
+// a propriedade estados é um vetor de varios objetos
+// cada objeto de estados possui as seguintes propriedades: sigla, nome e cidades
+// a propriedade "cidades" é um vetor com varias cidades.
+
+let estados = Object.values(data[0])
+let vetor_estados = estados[0] // agora sim, vetor onde cada estado é um objeto
+
+for(i=0; i<vetor_estados.length; i++){
+  let estado = vetor_estados[i]
+  console.log(`Nome: ${estado.nome} \nSigla: ${estado.sigla} \nCidades: ${estado.cidades}`)
+
+}
+//console.log(vetor_estados[0])

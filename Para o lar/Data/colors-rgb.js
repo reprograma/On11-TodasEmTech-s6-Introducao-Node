@@ -149,3 +149,16 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+let objeto = obj[0]
+let entradas = Object.entries(objeto)
+
+for (i=0; i< entradas.length; i++ ){
+    console.log(`${entradas[i][0]} - rgb(${entradas[i][1]})`)
+    }
+    
+
+
+
+
+ 
