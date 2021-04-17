@@ -1,0 +1,15 @@
+1) HTTP e CRUD apresentam similaridades ao passo que possibilitam a execuçao de tarefas, no entanto se diferem na forma como executam essas tarefas. O CRUD pode ser considerado uma operação em um banco de dados que opera em ciclos, enquanto o HTTP opera por meio de protocolos ligados ao client que realiza requisitos ao servidor que por sua vez dá um response.
+
+2) O PUT e o PATCH realizam alterações. Enquanto o PATCH realiza alterações parciais, o PUT faz alterações digamos que totais. Um exemplo seria alterar o endereço de uma pessoa num sistema, o PATCH possibilita que somente o endereço seja alterado sem que o restante das informações sejam necessárias. Já o PUT recebe todas as informações mesmo as que não são alteradas.
+
+3) arquivo .js enviados "Para o lar"
+
+4) Idempotência ocorre quando independente do número de repetições de uma operação o resultado é o mesmo. Uma API pode ser considerada idempotente quando utiliza métodos seguros.
+
+5) Existem 3 tipos de padrões de projeto: criacionais, estruturais e comportamentais. Cada um desses tipos pode ser representado por mais de um padrão. Aqui vou falar de um padrão de cada tipo.
+    - criacional:
+        singleton: assegura que uma classe possui uma única instancia e fornece um ponto global para acessá-la
+    - estrutural:
+        proxy: fornece acesso por outro meio
+    - comportamental:
+        interpreter: dada uma linguagem permite a representação gramatical por meio de representações realizadas pelo interpretação de setenças
