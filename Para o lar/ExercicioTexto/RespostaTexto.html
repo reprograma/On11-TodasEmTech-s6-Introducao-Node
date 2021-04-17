@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Resposta Exercício Texto - Semana 6</title>
+  
+  <link href="https://www.hostinger.com.br/tutoriais/como-forcar-acesso-ssl-em-meu-site" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="root">
+    <img src="logo.png">
+  </div>
+
+
+</body>
+
+</head>
+
+
+<body>
+  <h2 style="color: rgb(35, 22, 95); text-align: center;">Exercício Texto - Semana 6</h2></br></br>
+
+
+  <h3 style="color: rgb(14, 5, 53);">1. Qual a relação entre os métodos HTTP e o CRUD?</h3>
+
+
+
+  <p>Create (criar), Read (ler), Update (atualizar) e Delete (excluir) – as iniciais em inglês formam <b><i>CRUD</i></b> – são as quatro funções básicas que geralmente os sistemas que manipulam banco de dados devem poder executar.</p>
+  <p>O HTTP tem uma relação com o CRUD no processo de criação de APIs, utilizando-se do método <b><i>(GET, POST, PUT, PATCH e DELETE)</i></b>, que se relacionam conforme abaixo:</p>
+
+  <p><b>Create -> POST</b></p> 
+  <p><b>Read   -> GET</b></p>
+  <p><b>Update -> PUT</b></p>
+  <p><b>Delete -> Delete</b></p>
+
+
+
+  <h3 style="color: rgb(14, 5, 53);">2. Comente, com exemplos, a diferença entre o PUT e o PATCH.</h3>
+
+
+
+  <p>Os métodos <b> HTTP PUT e PATCH</b> são usados para indicar um requisição de alteração de dados.</p>
+
+ <p> <b>PUT:</b> Requisita que um entidade seja armazenada embaixo da URI fornecida. 
+  Se a URI se refere a um recurso que já existe, ele é modificado; 
+  Se a URI não aponta para um recurso existente, então o servidor pode criar o recurso com essa URI.</p>
+
+  <p> <b><u>Geralmente, ao usar-se o PUT, fica legível que a alteração do dado será com referência a entidade completa.</u> </b> </p>
+    
+  <p> <b>Exemplo:</b> (/usuario/2021) :</p>
+     
+  <p><b>Resultado: </b> <i>{'id': 2021, 'name': 'Nayara', 'idade': 31, 'documento': '035.2021.12-X'} </i></p>
+
+
+  <p> <b>PATCH:</b> Usado para aplicar modificações parciais a um recurso.</p>
+ 
+  <p> <b> <u>O PATCH é usado para atualização parcial, quando você não quer mandar o payload completo. </u> </b> </p>
+    
+  <p> <b>Exemplo: </b> (/usuario/2021) :</p>
+    
+  <p><b>Resultado:</b> <i>{'name': 'Nayara'} </i></p>
+  
+
+
+  <h3 style="color: rgb(14, 5, 53);">4. Defina o conceito de idempotência e como uma API pode ser idempotente.</h3>
+
+
+
+  <p>Um método HTTP idempotente é um método HTTP que pode ser chamado muitas vezes sem resultado diferentes.
+     Não importa se o método é chamado apenas uma vez ou 20 vezes. O resultado deve ser o mesmo.</p> 
+     
+  <p><b>Essencialmente, significa que o resultado de uma solicitação executada com sucesso é independente do número de vezes que ela é executada. </b></p>
+    
+  <p>Por exemplo, na aritmética, adicionar zero a um número é uma operação idempotente.</p> 
+    
+  <p>Quando falamos em idempotência em API’s REST, podemos concluir que os seguintes os verbos:</p>
+
+  <p><b><i>GET, PUT, DELETE, HEAD e OPTIONS  são idempotentes.</i></b></p> 
+  <p><b><i>POST não é idempotente.</i></b></p> 
+    
+  <p><b>Um exemplo de métodos idempotentes GET (Lista) trazerem uma lista dados de um usuário pode chamá-lo várias vezes, se o banco de dados não mudou o resultado será o mesmo, ao contrário de um método que adiciona que não é idempotente, se eu repetir duas vezes uma requisição a esse método vai adicionar dois usuários ao sistema.</b></p>
+  
+
+  <h3 style="color: rgb(14, 5, 53);">5. Cite alguns diferentes tipos de padrões de projeto de Software.</h3>
+
+
+
+  <p><b>Padrões de Criação</b></p>
+
+
+  <p>O objetivo dos Padrões de Criação é evitar problemas e proporcionar maior controle na tarefa de criação de objetos, separando o processo de criação, conclusão e representação de um objeto.</p>
+  <p>Os dois principais padrões para implementação de controle de criação de objetos são: <b><i>FactoryMethod e Singleton.</i></b></p>
+  <p>O GoF apresenta outros Padrões de Projetos para a criação de objetos, além dos apresentados aqui, tais como: <b><i>Abstract Factory, Builder e Prototype.</i></b></p>
+    
+    
+
+  <p><b>Padrões Estruturais</b></p>
+
+    
+  <p>Os Padrões Estruturais estão diretamente ligados à composição de uma classe, ou seja, como é formada a sua estrutura. Esse tipo de padrão define formas para criar composições ou adicionar comportamentos à um determinado objeto, sem necessariamente precisar alterar o código-fonte da classe que o implementa.</p>
+  <p>Os três principais padrões relacionados à esta categoria são: <b><i>Adapter, Decorator e Facade.</i></b></p>
+  <p>O GoF ainda apresenta outros padrões de projetos estruturais, como o <b><i>Proxy e o Composite.</i></b> Os Padrões Estruturais são aquela categoria de padrões de projeto que estão concentradas em como as classes e objetos podem ser compostos para formar grandes estruturas, focando em como as classes herdam de outras classes e também em como essas classes são compostas.</p>
+    
+
+
+  <p><b>Padrões Comportamentais</b></p>
+
+    
+  <p>Os Padrões Comportamentais, como o próprio nome diz, têm o objetivo de lidar com a forma com que um objeto se comunica com outro(s), sem que eles precisem conhecer muito uns dos outros. A interação entre objetos é um dos pontos principais de um bom projeto de software.</p>
+  <p>O padrão Mediator tem o objetivo de definir um objeto que encapsula toda a forma como um conjunto de objetos interage e atua como um mediador entre relacionamentos de objetos muitos-para-muitos, evitando referências explícitas aos objetos, promovendo o baixo acoplamento. O Mediator diminui a complexidade de relacionamentos entre objetos, centralizando a comunicação e facilitando a manutenção.</p>
+  <p>Outro padrão comportamental amplamente utilizado é o <b><i>Observer</i></b>, cujo objetivo principal é definir uma dependência um-para-muitos entre objetos. Quando um objeto mudar de estado, todos os dependentes são notificados e atualizados automaticamente e, para isso, o padrão Observer mantém uma lista com seus dependentes.</p>
+
+  <p>Outros Padrões Comportamentais muito populares em projetos de desenvolvimento de software são: <b><i>Command, Strategy, TemplateMethod e Iterator.</i></b></p>
+ 
+
+  </script>
+</body>
+
+</html>

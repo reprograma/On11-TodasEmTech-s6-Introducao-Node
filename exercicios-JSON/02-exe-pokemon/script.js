@@ -30,3 +30,46 @@ const data = [{
 }]
 
 // COMEÇA O EXERCÍCIO
+
+
+        for (let i=0; i < data.length; i++){ //aqui passa por toda lista de objeto
+            let pokemon = data[i]; //atribuindo o nome movie a unidade do objeto
+            console.log(pokemon.name) //apresentando no console o valor title
+            console.log(pokemon.description) //apresentando no console o valor do atributo description
+            console.log(pokemon.art_url) //apresentando no console o valor do atributo description
+
+            let tipos = pokemon.types
+            for(let i=0; i< tipos.length; i++){
+            console.log(tipos[i]) //apresentando no console o valor do atributo description   
+            }
+
+        }
+
+
+        //let i = 0while (i < data.length) {    
+            //let pokemon = data[i];    
+            //console.log(pokemon.name);    
+            //console.log(pokemon.description);      
+            //i++;  }
+
+            //for(item of data){
+                //console.log(
+                    //item.name,
+                    //item.description,
+                    //item.types
+                    //)
+            //}
+
+
+            //for(i = 0; i < data.length; i++){
+                //let pokemom = data[i]
+                //console.log(pokemom.name);
+                //console.log(pokemom.description);
+                //for (i of pokemom.types){
+                  //console.log(i);
+                //}
+              //}
+              
+            
+
+
