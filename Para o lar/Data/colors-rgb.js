@@ -149,3 +149,14 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+    
+
+    for (colors of obj){ //forOf pra rodar loop, find pra encontrar a primeira propriedade
+        obj.find(element =>{element > "aliceblue"});
+        for(codigoCor in colors){
+            obj.find(element =>{element > Number});   
+            console.log(codigoCor +"||"+ "RGB:" +(colors[codigoCor]));
+            
+         }
+    }
+
