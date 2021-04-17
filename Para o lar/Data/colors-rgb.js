@@ -149,3 +149,16 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+// resposta
+for(i=0; i<obj.length; i++){
+    let cores = obj.find(item => item)
+    //console.log(cores)
+
+    for(cor in cores){
+        //console.log(cores[cor])
+        
+        console.log(cor + " - " + cores[cor])
+    }   
+   
+}

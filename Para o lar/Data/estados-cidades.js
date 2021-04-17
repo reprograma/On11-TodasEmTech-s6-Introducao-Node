@@ -5735,3 +5735,20 @@ const data = [{
     ]
   }
 ]
+
+// resposta
+
+for(i=0; i<data.length;i++){
+  console.log(data[i])
+
+  let e = data[i]
+  for(i=0; i<e.estados.length; i++){
+    console.log(e.estados[i].sigla)
+    console.log(e.estados[i].nome)
+
+    let c = e.estados[i]
+    for(i=0; i<c.cidades.length; i++){
+      console.log(c.cidades[i])
+    }
+  }
+}
