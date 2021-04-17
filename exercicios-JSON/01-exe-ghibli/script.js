@@ -23,11 +23,19 @@ const obj = [
      }
     ]
 
-    // COMEÇA O EXERCÍCIO
-  
-    for (let i=0; i < obj.length; i++){ //aqui passa por toda lista de objeto
-      let movie = obj[i]; //atribuindo o nome movie a unidade do objeto
-      console.log(movie.title) //apresentando no console o valor do atributo title
-      console.log(movie.description) //apresentando no console o valor do atributo description
+    // COMEÇA O EXERCÍCIO 
+
+    /*let i = 0;
+    while (i < obj.length) {
+      console.log((Object.values(obj)))
+        i++;
+    } (minha solução) */
+
+    for (let i=0; i < obj.length; i++){ // passa por toda lista do objeto
+      let movie = obj[i]; // i é cada item do bloco do objeto, será chamada movie cada unidade do objeto
+      console.log(movie.title); // puxa o título do objeto array
+      console.log(movie.description); // puxa a descrição do objeto array
 
     }
+
+   
