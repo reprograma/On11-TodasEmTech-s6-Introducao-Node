@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução de Questões semana 6</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Resolução do Exercício da semana 6 - Turma 11 de Back-end </h1>
+    <nav class="principal">
+        <ul>
+            <li>
+                <a href="#questao1">Questão 1</a>
+            </li>
+            <li>
+                <a href="#questao2">Questão 2</a>
+            </li>
+            <li>
+                <a href="#questao4">Questão 4</a>
+            </li>
+            <li>
+                <a href="#questao5">Questão 5</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Atividade complementar sobre API </h2>
+        <p>Atividade complementar solicitada pela pofessora Analu Sampaio na semana 6 do curso de Back-end turma 11 do Reprograma</p>
+    </section>
+    <section id="questao1">
+        <h3 class="titulo-verde">1 - Qual a relação entre os métodos HTTP e o CRUD?</h3>
+        <p>Muitas vezes um CRUD é confundido com uma RESTFul, porém eles não são a mesma coisa, essa confusão se dá pelo fato de que os métodos HTTP são semelhates e dá para confundir com uma ligação direta.</p>
+        <p>O CRUD são as siglas de CREAT, READ, UPDATE E DELETE e são utilizadas na referencia das operações que são realizadas no banco de dados relacional sendo elas consulta, inclusão, alteração e exclusão dos registros.</p>
+        <p>Os métodos HTTP são métodos de requisição responsáveis por indicar a ações que serão executada para determinados recursos. Os primcipais métodos HTTP são: POST, GET, PUT, PATCH, DELETE.</p>
+        <p>A relação se dá devido a semelhança de classificação</p>
+        <ul>
+            <li> CREAT -- POST</li>
+            <li> READ -- GET</li>
+            <li> UPDATE-- PUT/PATCH</li>
+            <li> DELETE -- DELETE</li>
+        </ul>
+    </section>
+
+    <section id="questao2">
+        <h3 class="titulo-rosa">2 - Comente, com exemplos, a diferença entre o PUT e o PATCH</h3>
+        <p>Ambos os métodos são usados para indicar a requisição de uma alteração a diferença entre eles é que o método PUT realiza a alteração completa do seu recurso e possibilita a criação do recurso caso o mesmo não exista enquanto que o PATCH realiza
+            a alteração parcial do recurso e caso não exita não é possivel cria-lo</p>
+        <h4>Exemplos praticos de PUT e PATCH</h4>
+        <p>Em um banco de dados de Professores eu tenha os dados de id, nome, disciplina, colegiado e departamento para fazermmos alterações utilizando PUT eu preciso passar todos os dados do recurso preenchido, ou seja seu eu quiser alterar somente o departamento
+            do professor ou criar um novo recurso precisarei passar todos os demaias dados também, id, nome, disciplina, colegiado e departamento. Para que eu consiga fazer a alteração apenas de um dado já existe do recurso usa-se o método PUTCH </p>
+    </section>
+
+    <section id="questao4">
+        <h3 class="titulo-amarelo">4 - Defina o conceito de idempotência e como uma API pode ser idempotente</h3>
+        <p>Idempotencia para a matematica e a ciência da computação é a propriedade que uma operação têm de poderem ser aplicadas varias vezes e não sofrer alteração no seu resultado. Ao relacionarmos com API's temos que uma API é idempotente quando um método
+            é idempotente ou seja, quando o resultado de uma requisição com sucesso é o mesmo independente das vezes que ela foi executada seus requisitos não são alterados um exemplo de metodo idempotentes GET, PUT, DELETE, como o método POST é de criar
+            um recurso ele não pode ser um método idempotente </p>
+    </section>
+
+    <section id="questao5">
+        <h3 class="titulo-azul">5 - Cite alguns diferentes padrões de projetos de software</h3>
+        <p>Pode-se identificar difetentes padrões de projetos pois os mesmos são inspirados por uma propostas esses padrões de projetos podem ser:</p>
+        <ul>
+            <li>Fábrica</li>
+            <li>Singleton</li>
+            <li>proxy</li>
+            <li>Adaptador</li>
+            <li>Decorador</li>
+            <li>Strategy</li>
+            <li>Observador</li>
+            <li>template Method</li>
+            <li>Visitor</li>
+        </ul>
+    </section>
+
+    <h3>Referêncial</h3>
+    <nav>
+        <ul>
+            <li>
+                <a a target="blank" href="https://qastack.com.br/software/120716/difference-between-rest-and-crud#:~:text=No%20entanto%2C%20o%20HTTP%20usa,CRUD%20separa%20criar%20e%20atualizar." target="blank">https://qastack.com.br/software/120716/difference-between-rest-and-crud#:~:text=No%20entanto%2C%20o%20HTTP%20usa,CRUD%20separa%20criar%20e%20atualizar.</a>
+            </li>
+            <li>
+                <a a target="blank" href="https://medium.com/@gabrielrufino.com/put-vs-patch-pare-de-agora-escolher-errado-533b8c6058d9" target="blank">https://medium.com/@gabrielrufino.com/put-vs-patch-pare-de-agora-escolher-errado-533b8c6058d9.</a>
+            </li>
+            <li>
+                <a a target="blank" href="https://medium.com/@lucasschwenke/idempot%C3%AAncia-uma-boa-pr%C3%A1tica-a-se-utilizar-em-servi%C3%A7os-rest-633c38f4d7c0" target="blank">https://medium.com/@lucasschwenke/idempot%C3%AAncia-uma-boa-pr%C3%A1tica-a-se-utilizar-em-servi%C3%A7os-rest-633c38f4d7c0</a>
+            </li>
+            <li>
+                <a a target="blank" href="https://engsoftmoderna.info/cap6.html." target="blank">https://engsoftmoderna.info/cap6.html</a>
+            </li>
+        </ul>
+    </nav>
+
+</html>
