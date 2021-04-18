@@ -76,34 +76,16 @@
     }
 ]
 // No filmes.js apresente titulo, plot, generos e lingua. Genero e lingua devem ser apresentados em arrays no console.
-   // for(i=0; i < filmes.length; i++)
-  //  {let mostraInfo = filmes[i];
-        // console.log(mostraInfo.Title);
-        // console.log(mostraInfo.Year);
-        // console.log(mostraInfo.Rated);
-        // console.log(mostraInfo.Released);
-        // console.log(mostraInfo.Runtime);
-        // console.log(mostraInfo.Genre);
-        // console.log(mostraInfo.Director);
-        // console.log(mostraInfo.Writer);
-        // console.log(mostraInfo.Actors);
-        // console.log(mostraInfo.Plot);
-        // console.log(mostraInfo.Language);
-        // console.log(mostraInfo.Country);
-        // console.log(mostraInfo.Awards);
-   // }
 
    // O Object.keys cria um array contendo apenas as propriedades do objeto.
    // O Object.values cria um array apenas com os valores.
    // O Object.entries cria um array com dois items, o primeiro é a propriedade, e o segundo é o valor.
-   //for(i=0;i<filmes.length;i++)
-   //{let paraMostrarObjeto = filmes[i];
+   
     for(let i=0; i < filmes.length; i++){
-    let movieInfo = filmes[i]
+    let movieInfo = filmes[i];
  
-    console.log(movieInfo.Title)
-    console.log(movieInfo.Genre)
-
+    let arrLinGen = [movieInfo.Genre, movieInfo.Language]
     
+    console.log("Titulo:" + movieInfo.Title +"\nPlot:" + movieInfo.Plot + "\nGênero e Língua:")
+    console.log(arrLinGen);
     }
-//}
