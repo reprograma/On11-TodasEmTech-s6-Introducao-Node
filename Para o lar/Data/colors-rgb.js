@@ -1,3 +1,7 @@
+
+
+
+
 const obj = [{
     "aliceblue": [240, 248, 255, 1],
     "antiquewhite": [250, 235, 215, 1],
@@ -149,3 +153,12 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+
+for(var i = 0; i < obj.length; i++){
+    let cores = obj[i];
+
+    console.log (cores)
+}
+
+//No colors-rgb.js apresente o nome da cor e o codigo RGB como no exemplo: "gainsboro - rgb(220, 220, 220, 1)"
