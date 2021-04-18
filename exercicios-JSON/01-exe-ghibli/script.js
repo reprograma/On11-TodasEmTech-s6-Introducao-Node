@@ -25,3 +25,9 @@ const obj = [
 
     // COMEÇA O EXERCÍCIO
   
+
+    for (let i=0 ; i< obj.length; i++){ //aqui passa por todo o objeto
+      let movie = obj[i]; //nessa lista de objetos e a unidade de objeto se chamará MOVIE
+      console.log(movie.title); //apresentando no console o valor do atributo TITLE
+      console.log(movie.description); // 
+    }
