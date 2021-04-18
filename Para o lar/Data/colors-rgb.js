@@ -149,3 +149,10 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+ 
+const [ cor ] = obj;
+for (let rgb in cor) {
+    console.log(`${rgb} - rgb(${cor[rgb].join(",")})`)
+}
+
