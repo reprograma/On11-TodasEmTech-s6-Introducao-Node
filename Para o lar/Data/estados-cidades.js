@@ -5735,3 +5735,11 @@ const data = [{
     ]
   }
 ]
+
+
+const [{ estados }] = data;
+estados.forEach( estado => {
+  console.log(`${estado.nome}\r${estado.sigla} \r${estado.cidades.join('\r')} \r\r`)
+})
+
+
