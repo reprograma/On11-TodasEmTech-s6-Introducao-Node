@@ -31,6 +31,23 @@ const data = [{
 
 // COMEÇA O EXERCÍCIO
 
+<<<<<<< HEAD
+// for(item of data){
+//     console.log(
+//         item.name,
+//         item.description)
+//         item.types
+// }
+
+for (let i = 0; i < data.length; i++){
+    let pokemon = data[i];
+    console.log(pokemon.name);
+    console.log(pokemon.description);
+    console.log(pokemon.types[0])
+    console.log(pokemon.types[1]);
+    
+    
+=======
 for (let i=0; i < data.length; i++){
     let pokemon = data[i];
     console.log(pokemon.name)
@@ -44,4 +61,5 @@ for (let i=0; i < data.length; i++){
     
     
 
+>>>>>>> 3114a18cf17a31e86381f035d5b1a99181ebf84c
 }
