@@ -1,3 +1,4 @@
+
 const obj = [
     {
         "Title":"10 Things I Hate About You",
@@ -75,3 +76,15 @@ const obj = [
         "Awards":"Nominated for 3 Oscars. Another 40 wins & 66 nominations."
     }
 ]
+//No filmes.js apresente titulo, plot, generos e lingua. 
+//Genero e lingua devem ser apresentados em arrays no console.
+
+const reducedJson= obj.map((movie)=>{
+    return{
+    "Titulo" : movie.Title,
+    "Plot" : movie.Plot,
+    "Generos" : movie.Genre.split(", "),
+    "Lingua" : movie.Language.split(", "),
+    }
+})
+console.log(reducedJson)

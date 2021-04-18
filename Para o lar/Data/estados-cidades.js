@@ -1,3 +1,4 @@
+//No estados-cidade.js apresente o nome do Estado, a sigla e todas as cidadades, sem arrays aparentes no console
 const data = [{
     "estados": [
       {
@@ -5735,3 +5736,13 @@ const data = [{
     ]
   }
 ]
+const json =data[0]
+const estados= json["estados"]
+estados.map((estado) =>{
+  let nomeEstado = estado.nome
+  let siglaEstado = estado.sigla
+  let cidades = estado.cidades.map((cidade)=> `\n${cidade}`)
+  console.log(`Estado: ${nomeEstado} (${siglaEstado})`)
+  console.log(`Cidades: \n${cidades}`)
+  console.log(`\n###############################################################################\n`)
+})
