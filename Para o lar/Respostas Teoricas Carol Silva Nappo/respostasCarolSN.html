@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMANA 6 - Para o Lar - Parte Teórica de Carol SN </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <font face="Montserrat">  
+
+    <div class='question'>
+        <input type='checkbox' id='question-1'>
+        <label for='question-1'>1) Qual a relação entre os métodos HTTP e o CRUD?</label>
+        <div class='answer'>
+            <BR>Olá,  para explicar a relação entre os metodos HTTP e CRUD, vamos primeiro entender um pouco sobre cada um: <br> <br>
+            CRUD é o acrônimo em inglês, tipo uma sigla, sabe? Ou seja: <br><br> C create (criar) <br>R read (ler)<br>U Update (atualizar)<br>D Delete (excluir)
+            <br> <br>O CRUD é uma espécie de padronização de construção, ou um estilo de arquitetura, usadas em base de dados.  <br><br>
+            Já o HTTP, como vimos na aula é um protocolo de comunicação da web para enviar e receber pedidos (requests) do cliente ao servidor, que por sua vez devolve respostas (responses). Para acontecer essa sintonia ai cliente/servidor, existe uma série de métodos (ou verbos) que podemos usar. Os mais conhecidos são:<br> <br>
+            GET ler<br>
+            POST criar<br>
+            PUT substituir<br>
+            PATCH modificar<br>
+            DELETE excluir<br> <br>
+            
+            E então, viu ai algumas relações das ações de CRUD com os métodos de HTTP ? <br> <br>
+            
+             De maneira muito simplista, podemos chamar o servidor de base de dados, certo? Então aí está: a maneira como os métodos HTTP funcionam, podem ser consideradas operações do modelo CRUD, entendeu?<br> <br>
+        </div>
+      </div>
+
+      <div class='question'>
+        <input type='checkbox' id='question-2'>
+        <label for='question-2'>2) Comente, com exemplos, a diferença entre o PUT e o PATCH.</label>
+        <div class='answer'>
+           <br>Eles são métodos de <B> requisição </B>do HTTP. Que nada mais significa do que dizer que são comandos para fazer algo naquela comunicação entre o cliente e o servidor. 
+           <BR><br>De acordo com a definição do nosso querido developer.mozilla.org eles são responsáveis por: <br>
+           <BR> <I>O método <b>PATCH</b> é utilizado para aplicar modificações parciais em um recurso.<BR>
+           O método <B>PUT</B> substitui todas as atuais representações do recurso de destino pela carga de dados da requisição.</I><br><br>
+           <bR>
+           Ok, então ambos servem para atualização de conteúdo. E...? <BR> Bom, para ajudar na compreensão, acho sempre interessante pensar na tradução da palavra para o português, de forma literal: PUT significa "colocar" e PATCH significa "remendar". <BR>
+            Daí ja notamos que o PATCH é uma ação menos completa e a PUT mais "intensa", por assim, dizer. <BR>
+            Assim como na vida, se não queremos gastar energia (no caso, dados) de forma excessiva, qual seria o melhor método? O PATCH, né? 
+             <BR>   <br>
+            Um último exemplo, não tecnicamente correto, mas mais didático, seria:<br>
+Se um usuário preencheu um formulário ontem e hoje fizemos uma atualização e pedimos para preencher novamente, aconteceria o seguinte:<br>
+PUT - seria criado um novo cadastro<br>
+PATCH - somente os novos dados inseridos serão enviados e salvos.
+<br><br>
+Tendeu?
+
+<BR><BR>Lembrando que o metodo PUT é necessariamente, idempotente, já o PATCH, não necessariamente. O conceito de idempotência será melhor abordado na questão 4.
+
+        </div>
+      </div>
+
+      <div class='question'>
+        <input type='checkbox' id='question-3'>
+        <label for='question-3'>3) Assim como na aula, apresente os dados dos JSONs no console</label>
+        <div class='answer'>
+          <BR>Olá, favor consultar os arquivos na pasta:  ---> <i>"Para o lar".</i>
+        </div>
+      </div>
+
+      <div class='question'>
+        <input type='checkbox' id='question-4'>
+        <label for='question-4'>4) Defina o conceito de idempotência e como uma API pode ser
+            idempotente</label>
+        <div class='answer'>
+           É a maneira de ativar uma função sem alterar seu comportamente inicial, independentemente da quantidade de vezes que for executada. Além disso, não altera funções colaterais.
+           <BR>Uma API pode ser idempotente quando ela é RESTfull, pois todos principios usados são idempotentes.
+
+        </div>
+      </div>
+      <div class='question'>
+        <input type='checkbox' id='question-5'>
+        <label for='question-5'>5) Cite alguns diferentes padrões de projetos de software</label>
+        <div class='answer'>
+          <BR> Padrões de projetos de softwares são conjuntos de passo a passo para criação, estruturação, desenvolvimento, execução e comportamente de softtawares. Alguns exemplos são: 
+<BR><BR>
+           Singleton<BR>
+           Adapter<BR>
+           Template method<BR>
+           Abstract factory<BR>
+
+        </div>
+      </div> 
+    </font> <br />
+    </body>
+</html>
