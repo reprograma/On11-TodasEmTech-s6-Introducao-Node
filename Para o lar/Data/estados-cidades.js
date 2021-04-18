@@ -5735,3 +5735,11 @@ const data = [{
     ]
   }
 ]
+for (let i = 0; i < data.length; i++) {
+    for(let j = 0; j < data[i].estados.length; j++) {
+      let cidadeValue = data[i].estados[j].cidades;
+      let cidadeString = cidadeValue.join(', ');
+      console.log(`${data[i].estados[j].nome + ' (' + data[i].estados[j].sigla + ')'}`);
+      console.log(`Cidades: ${cidadeString}`);  
+  }
+}

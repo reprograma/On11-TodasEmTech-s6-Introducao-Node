@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perguntas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  </head>
+  <body>
+  <section class="section">
+    <div class="container column is-half box">
+      <h1 class="title">Perguntas</h1>
+      <h5><strong>1) Qual a relação entre os métodos HTTP e o CRUD?</strong></h5>
+      <div class="notification content">
+        <p>
+            <strong>HTTP</strong>, Hypertext Transfer Protocol é um protocolo que permite a obtenção de recursos,
+            como documentos HTML.  É a base de qualquer troca de dados na Web e um protocolo cliente-servidor,
+            o que significa que as requisições são iniciadas pelo destinatário, geralmente um navegador da Web.
+        </p>
+        <p>
+            <strong>CRUD</strong>, Create (criar), Read (ler) Update (atualizar) e Delete (apagar) são quatro principais
+            funções usadas para interagir com aplicações de banco de dados. Muitas linguagens de programação e protocolos
+            possuem sua versão equivalente de CRUD.
+        </p>
+        <p>
+            <strong>REST</strong>, Representational State Transfer (Transferência de Estado Representacional) é uma 
+            abstratação da arquitetura de software, principalmente de <strong>APIs web</strong>, que se baseia em limitações de
+            design que, quando seguidas, é possível produzir aplicações com propriedades específicas.
+        </p>
+        <P>
+            <strong>API</strong>, Application Programming Interface (Interface de programação de aplicações)
+            são um conjunto de padrões que fazem parte de uma interface e que permitem a criação de aplicações de forma mais fácil para desenvolvedores. 
+        </P>
+        <p>
+            <strong>REST APIs</strong> se comunicam com clientes utilizando protocolo HTTP, que possui seus próprios métodos de manipulação de
+            dados, como: <strong>GET</strong>, <strong>POST</strong>, <strong>DELETE</strong>, <strong>PUT</strong>, <strong>PATCH</strong> e entre outros.
+            Há uma certa semelhança entre os métodos HTTP e as funções CRUD, como:
+        </p>
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <td><strong>CRUD</strong></td>
+                    <td><strong>HTTP</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CREATE</td>
+                    <td>POST/PUT</td>
+                </tr>
+                <tr>
+                    <td>READ</td>
+                    <td>GET</td>
+                </tr>
+                <tr>
+                    <td>UPDATE</td>
+                    <td>PUT/POST/PATCH</td>
+                </tr>
+                <tr>
+                    <td>DELETE</td>
+                    <td>DELETE</td>
+            </tbody>
+        </table>
+        <p>
+            REST APIs não são limitadas a funções CRUD. Por exemplo, desde que se use os métodos de HTTP apropriados, uma REST API
+            pode permitir que clientes reiniciem um servidor, sendo que isso não é permitido por nenhuma das quatro funções CRUD.
+        </p>
+      </div>
+      <h5><strong>2) Comente, com exemplos, a diferença entre o PUT e o PATCH.</strong></h5>
+      <div class="notification content">
+        <p>
+            <strong>PUT</strong> substitui um dado por completo (mesmo que esse dado não exista), e também pode ser usado para criar
+            novos dados.
+        </p>
+        <p>
+            <strong>PATCH</strong> é usado para atualizar parcialmente um dado.
+        </p>
+        <strong>Exemplos:</strong>
+        <pre>PUT /usuarios/1
+{
+    "usuaria": "helenadearaujo",
+    "email": "helenadearaujo@email.com"       // novo endereço de email
+}
+        </pre>
+        <pre>PATCH /usuarios/1
+{
+    "email": "helenadearaujo@email.com"       // novo endereço de email
+}
+        </pre>
+      </div>
+      <h5><strong>4) Defina o conceito de idempotência e como uma API pode ser idempotente</strong></h5>
+      <div class="notification content">
+        <p>
+            Em matemática e ciência da computação, a idempotência é a propriedade que algumas operações
+            têm de poderem ser aplicadas várias vezes sem que o valor do resultado se altere após a aplicação inicial.
+            Um método HTTP idempotente é um método HTTP que pode ser chamado muitas vezes sem resultados diferentes.
+            Não importa se o método é chamado apenas uma vez ou dez vezes. O resultado deve ser o mesmo.
+        </p>
+        <p>
+            Em API’s REST, podemos concluir que os seguintes os verbos: 
+        </p>
+        <ul>
+            <li><strong>GET</strong>, <strong>PUT</strong>, <strong>DELETE</strong>, <strong>HEAD</strong> 
+            e <strong>OPTIONS</strong> são idempotentes.</li>
+            <li><strong>POST</strong> não é idempotente.</li>
+        </ul>
+        <p>
+            Há métodos seguros e não seguros, seguros são aqueles que não alteram o estado da aplicação e não seguros que podem alterar.
+        </p>
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <td><strong>Método</strong></td>
+                    <td><strong>Idempotente</strong></td>
+                    <td><strong>Seguro</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GET</td>
+                    <td>Sim</td>
+                    <td>Sim</td>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td>Não</td>
+                    <td>Não</td>
+                </tr>
+                <tr>
+                    <td>PUT</td>
+                    <td>Sim</td>
+                    <td>Não</td>
+                </tr>
+                <tr>
+                    <td>DELETE</td>
+                    <td>Sim</td>
+                    <td>Não</td>
+                </tr>
+                <tr>
+                    <td>HEAD</td>
+                    <td>Sim</td>
+                    <td>Sim</td>
+                </tr>
+                <tr>
+                    <td>OPTIONS</td>
+                    <td>Sim</td>
+                    <td>Sim</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+      <h5><strong>5) Cite alguns diferentes padrões de projetos de software</strong></h5>
+      <div class="notification content">
+        <p>
+            Há 23 padrões de acordo com GoF (Gang of Four), que de acordo com suas finalidades
+            possuem 3 categorias:
+            <ul>
+                <li>
+                    <strong>Padrões de criação:</strong> são aqueles que abstraem e ou adiam o processo criação dos objetos.
+                    Eles ajudam a tornar um sistema independentemente de como seus objetos são criados, compostos e representados.
+                    Um padrão de criação de classe usa a herança para variar a classe que é instanciada, enquanto um padrão de criação de objeto delegará a instanciação para outro objeto.
+                    <br>
+                    <strong>Exemplos:</strong>
+                    <ul>
+                        <li>Abstract Factory</li>
+                        <li>Object pool</li>
+                        <li>Builder</li>
+                        <li>Factory Method</li>
+                        <li>Prototype</li>
+                        <li>Singleton</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Padrões estruturais:</strong> se preocupam com a forma como classes e objetos são compostos para formar estruturas maiores. Os de classes utilizam a herança
+                    para compor interfaces ou implementações, e os de objeto ao invés de compor interfaces ou implementações, eles descrevem maneiras de compor objetos para obter novas funcionalidades.
+                    <br>
+                    <strong>Exemplos:</strong>
+                    <ul>
+                        <li>Private class data</li>
+                        <li>Adapter</li>
+                        <li>Bridge</li>
+                        <li>Composite</li>
+                        <li>Decorator</li>
+                        <li>Façade (ou Facade)</li>
+                        <li>Business Delegate</li>
+                        <li>Flyweight</li>
+                        <li>Proxy</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Padrões de comportamento:</strong> se concentram nos algoritmos e atribuições de responsabilidades entre os objetos. Eles não descrevem apenas padrões de objetos ou de classes,
+                    mas também os padrões de comunicação entre os objetos.
+                    <br>
+                    <strong>Exemplos:</strong>
+                    <ul>
+                        <li>Chain of Responsibility</li>
+                        <li>Command</li>
+                        <li>Interpreter</li>
+                        <li>Iterator</li>
+                        <li>Mediator</li>
+                        <li>Memento</li>
+                        <li>Observer</li>
+                        <li>State</li>
+                        <li>Strategy</li>
+                        <li>Template Method</li>
+                        <li>Visitor</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+      </div>
+    </div>
+  </section>
+  </body>
+</html>
