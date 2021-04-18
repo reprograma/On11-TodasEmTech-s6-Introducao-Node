@@ -1,0 +1,23 @@
+Abra o PullRequest Respondendo as seguintes questões:
+1) Qual a relação entre os métodos HTTP e o CRUD?
+Pra cada função do CRUD existe um método HTTP adequado. Ex: ao criar um recurso podemos utilizar o método POST. Ao listá-los utilizamos o método GET. E assim por diante.
+
+2) Comente, com exemplos, a diferença entre o PUT e o PATCH.
+Put serve pra atualizar todo o recurso.
+Por exemplo, digamos que sua classe nota possui os atributos titulo e descrição – e você editou apenas o título. A documentação indica que você deve passar ambos os atributos preenchidos para o serviço (mesmo só tendo editado o título).
+
+O patch é usado para editar o recurso sem a necessidade de enviar todos os atributos – o consumidor envia apenas aquilo que de fato foi alterado (mais o ID como parâmetro, para que o serviço saiba o que vai ser alterado).
+
+3) Assim como na aula, apresente os dados dos JSONs no console
+No colors-rgb.js apresente o nome da cor e o codigo RGB como no exemplo: "gainsboro - rgb(220, 220, 220, 1)"
+No estados-cidade.js apresente o nome do Estado, a sigla e todas as cidadades, sem arrays aparentes no console
+No filmes.js apresente titulo, plot, generos e lingua. Genero e lingua devem ser apresentados em arrays no console.
+
+4) Defina o conceito de idempotência e como uma API pode ser idempotente.
+Um método que não altere nada no servidor e que podemos chamar várias vezes são o que chamamos de métodos idempotentes,
+Exemplo: Método Get.
+
+5) Cite alguns diferentes padrões de projetos de software
+1- Padrões de Criação (Creational)
+2- Padrões de Estrutura (Structural)
+3- Padrões de Comportamento (Behavioral)
