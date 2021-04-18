@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades da Semana 06</title>
+   
+</head>
+<body>
+    
+    <h1>On11-TodasEmTech-s6-Introducao-Node
+        Turma Online 11 - Todas em Tech | Back-end | 2021 | Introdução à API:
+        HTTP e NodeJS
+    </h1>
+    
+
+    <h3>1) Qual a relação entre os métodos HTTP e o CRUD?</h3>
+    <p>
+        Pode-se dizer que HTTP é um protocolo que determina os padrões e define quais serão as regras relacionadas as trocas de informações entre os
+        servidores que hospedam os sites e os computadores. Ele é responsável por organizar o tráfego de informaões além de realizar a codificação de forma
+        que o site chegue até o usuário quando este tentar acessá-lo.
+    </p>
+    <p>
+        Já o CRUD pode ser definido como um conjunto de operações primitivas, bastante utilizado em banco de dados e armazenamento de dados estatísticos.
+        É responsável por realizar as operações em um repositório de dados. O CRUD é um acrônimo para as 4 operações básicas de um banco de dados: create
+        (insert), read (select), update (update) e delete (delete).
+    </p>
+    <p>
+        A relação do HTTP e do CRUD é na hora do recurso. Uma vez que o recurso é estabelecido, será necessário identificar quais as ações serão aplicadas
+        ao recurso e como eles serão alocados no API. O princípio do RESTFULL fornece meios para lidar com as ações do CRUD usando os métodos HTTP. Exemplo:
+        GET , POST, PUT, PATCH e DELETE.
+    </p>
+
+    <h3>2) Comente, com exemplos, a diferença entre o PUT e o PATCH.</h3>
+    
+    <p>O método PUT aplica uma atualização completa do recurso além de ser idempotente, já o PATCH atualiza apenas um subconjunto dos dados do seu recurso
+        e não é idempotente. No PUT para que a alteração seja realizada, será necessário enviar todos os parâmetros da entidade, o que não é necessário quando
+        se utiliza o PATCH. Exemplificando: { "username": "raquel", "email": "raquel@hotmail.com" }, ao fazer um PUT para atualização do e-mail, Temos
+        { "username": "raquel", "email": "raquel@hotmail.com" } e o PATCH fica sendo: { "username": "raquel@gmail.com"}.
+    </p>
+    
+    <h3>3) Assim como na aula, apresente os dados dos JSONs no console </h3>
+            <ol>
+                <li>No colors-rgb.js apresente o nome da cor e o codigo RGB como no exemplo: "gainsboro - rgb(220, 220, 220, 1)".</li>
+                <li>No estados-cidade.js apresente o nome do Estado, a sigla e todas as cidadades, sem arrays aparentes no console</li>
+                <li>No filmes.js apresente titulo, plot, generos e lingua. Genero e lingua devem ser apresentados em arrays no console.</li>
+            </ol>
+            
+    <h3>4) Defina o conceito de idempotência e como uma API pode ser idempotente.</h3>
+
+    <p>A idempotência é uma propriedade que algumas operações tem de poder ser aplicadas várias vezes sem que o valor do resultado seja alterado. 
+        Exemplos de verbos idempotentes: GET, PUT, DELETE, HEAD e OPTIONS. A idempotência garante que uma solicitação de API seja concluída apenas uma vez. 
+        Com uma solicitação idempotente, se a solicitação original for concluída com êxito, as novas tentativas subsequentes retornarão o resultado da 
+        solicitação original bem-sucedida e não terão efeito adicional.
+    </p>
+
+    <h3>5) Cite alguns diferentes padrões de projetos de software</h3>
+
+    <p>
+        Existem em torno de 23 padrões, divididos nas seguintes três categorias:
+
+        <ol>
+            <b><li>Criacionais:</b>padrões que propõem soluções flexíveis para criação de objetos. São eles: Abstract Factory, Factory Method, Singleton, Builde, Prototype.</li>
+            <b><li>Estruturais</b> padrões que propõem soluções flexíveis para composição de classes e objetos. São eles: Proxy, Adapter, Facade, Decorator, Bridge, Composite e Flyweight.</li>
+            <b><li>Comportamentais:</b>padrões que propõem soluções flexíveis para interação e divisão de responsabilidades entre classes e objetos. São eles: Strategy  Observer, Template Method, Visitor, Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento e State.</li>
+        </ol>
+    </p>
+</body>
+</html>
