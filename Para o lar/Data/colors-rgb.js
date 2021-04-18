@@ -149,3 +149,17 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+// exercicio para o lar abaixo:
+
+for (let i=0; i < obj.length; i++){
+    let cores = obj[i];
+    console.log(cores.length)
+
+}
+
+
+
+//obj.forEach(function(element) {console.log(element)})
+
+
