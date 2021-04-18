@@ -1,0 +1,32 @@
+Para casa
+
+1) Qual a relação entre os métodos HTTP e o CRUD?
+HTTP: O metodo define o que o servidor deve fazer com o URL forncedio no momentoda requisiçãi de um recurso.
+
+CRUD: utilizada em bases de dados relacionais (RDBMS) fornecidas aos utilizadores do sistema.
+
+2) Comente, com exemplos, a diferença entre PUT e o PATCH:
+
+HTTP PUT: permite apenas substituições compleetas de um documento.
+
+HTTP PATCH: aplica modificações parciais a um recurso. Diferente do método PUT, pois o PATCH não é idempotente
+
+3) Assim como na aula, apresente os dados dos JSONs no console:
+Responder no VSCOD 
+
+4) Defina o conceito de idempotência e como uma API pode ser idempotente:
+
+Idempotência: Uma requisição pode ser feita uma ou mais vezes em sequência com o mesmo efeito enquanto deixa o servidor no mesmo estado. 
+
+API idempotente: GET, PUT, DELETE, HEAD e OPTIONS.
+
+API idempotente: O uso da API, previne alguns erros e também aplica uma boam prática.
+
+5)Cite alguns diferentes padrões de projetos de software
+
+Factory Method
+
+Prototype
+
+Adapter
+

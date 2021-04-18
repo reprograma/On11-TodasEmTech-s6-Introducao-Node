@@ -30,3 +30,16 @@ const data = [{
 }]
 
 // COMEÇA O EXERCÍCIO
+
+for (let i=0; i< obj.length; i++){
+    let pokemon = data [i];
+    console.log(pokemon.name)
+    console.log(pokemon.description)
+    console.log(pokemon.art_url)
+
+    let tipos = pokemon.types
+    for (let i=0; i< tipos.length; i++){
+
+    console.log(pokemon.types[i])
+    }
+
