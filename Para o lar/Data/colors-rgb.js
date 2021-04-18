@@ -149,3 +149,10 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+for (let i = 0; i <= obj.length; i++) {
+    let color = obj[i]
+    for (let item in color) {
+        console.log(`${item} - rgbn(${color[item]})`)
+    }
+}
