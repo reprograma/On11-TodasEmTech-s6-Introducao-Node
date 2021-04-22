@@ -5735,3 +5735,18 @@ const data = [{
     ]
   }
 ]
+for (let i=0; i < data.length; i++){
+  let geografiaBrasil = data[i];
+  let brasilEstados = geografiaBrasil.estados
+  
+  for(let i=0; i< brasilEstados.length; i++){
+    console.log(brasilEstados[i].sigla)
+    console.log(brasilEstados[i].nome)
+      
+    let brasilCidades = brasilEstados[i].cidades
+    for(let i=0; i< brasilCidades.length; i++){
+
+      console.log(brasilCidades[i])
+    }
+  }
+}

@@ -149,3 +149,8 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+for (let i=0; i < obj.length; i++){
+    let color = obj[i];
+    console.log(color)
+}
